@@ -25,8 +25,6 @@ public class ViewItem extends RecyclerView.ViewHolder implements ItemInterface {
         url = itemView.findViewById(R.id.url);
         edit = itemView.findViewById(R.id.edit);
 
-
-
         url.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,11 +50,6 @@ public class ViewItem extends RecyclerView.ViewHolder implements ItemInterface {
                 }
             }
         });
-
-
-
-
-
 
     }
 

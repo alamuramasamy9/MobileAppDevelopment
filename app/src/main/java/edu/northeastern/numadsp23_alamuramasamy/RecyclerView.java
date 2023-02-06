@@ -30,7 +30,7 @@ public class RecyclerView extends AppCompatActivity implements ItemInterface {
     ArrayList<URL> linkStore;
     FloatingActionButton floatingActionButton;
     ConstraintLayout newLayout;
-    ImageView edit;
+    Button edit;
     URL a;
 
     private Button delete;
@@ -46,7 +46,7 @@ public class RecyclerView extends AppCompatActivity implements ItemInterface {
 
         linkRecyclerView = findViewById(R.id.url_recycler_view);
         floatingActionButton = findViewById(R.id.addLink);
-        edit = findViewById(R.id.edit);
+        //edit = findViewById(R.id.edit);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +66,7 @@ public class RecyclerView extends AppCompatActivity implements ItemInterface {
                         String message = "";
 
                         if (Patterns.WEB_URL.matcher(url).matches()) {
-                            message = "New link successfully added";
+                            message = "New link successfully added, swipe right to delete";
                             //a = new URL(url, name);
                             linkStore.add(new URL(url, name));
                             System.out.println("printing link store in recycle" + linkStore);
@@ -94,7 +94,7 @@ public class RecyclerView extends AppCompatActivity implements ItemInterface {
 //                        //linkStore.add(new URL(url, name));
 //                    }
 //                });
-//
+
                 dialog.show();
             }
         });

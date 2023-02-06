@@ -21,6 +21,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ViewItem>{
         this.list = itemList;
         this.context = context;
         this.itemUrl = linkClick;
+        System.out.println("bvnn"+itemUrl);
     }
 
     @Override
@@ -39,6 +40,8 @@ public class ItemAdapter extends RecyclerView.Adapter<ViewItem>{
         holder.url.setText(currentItem.getUrl());
 
     }
+
+
 
 //     edit.setOnClickListener(new View.OnClickListener() {
 //                    @Override

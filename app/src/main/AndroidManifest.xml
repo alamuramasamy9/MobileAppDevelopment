@@ -26,6 +26,14 @@
             android:name=".ClickyActivity"
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name=".RecyclerView"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity
+            android:name=".AboutMe"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
 
     </application>
 

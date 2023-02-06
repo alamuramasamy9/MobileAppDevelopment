@@ -10,11 +10,13 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginBottom="287dp"
         android:text="Hello World!"
-        app:layout_constraintEnd_toEndOf="@+id/buttonClicky"
-        app:layout_constraintTop_toBottomOf="@+id/buttonClicky" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbtMe" />
 
     <Button
         android:id="@+id/buttonAbtMe"
@@ -37,6 +39,18 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonAbtMe"
         tools:layout_marginBottom="100dp"
         tools:layout_marginEnd="132dp" />
+
+    <Button
+        android:id="@+id/LinkCollector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="37dp"
+        android:text="Link Collector"
+        app:layout_constraintStart_toStartOf="@+id/buttonClicky"
+        app:layout_constraintTop_toBottomOf="@+id/buttonClicky" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,18 +10,18 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="22dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
         android:text="Hello World!"
-        app:layout_constraintEnd_toEndOf="@+id/primeNo"
+        app:layout_constraintStart_toStartOf="@+id/primeNo"
         app:layout_constraintTop_toBottomOf="@+id/primeNo" />
 
     <Button
         android:id="@+id/buttonAbtMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="91dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="33dp"
         android:text="About Me"
         app:layout_constraintStart_toStartOf="@+id/buttonClicky"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,10 +30,10 @@
         android:id="@+id/buttonClicky"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="118dp"
         android:text="Clicky Clicky"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAbtMe"
         tools:layout_marginBottom="100dp"
         tools:layout_marginEnd="132dp" />
@@ -45,7 +45,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="13dp"
         android:text="Link Collector"
         app:layout_constraintStart_toStartOf="@+id/buttonClicky"
         app:layout_constraintTop_toBottomOf="@+id/buttonClicky" />
@@ -54,7 +54,7 @@
         android:id="@+id/primeNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="17dp"
         android:text="Prime Search"
         app:layout_constraintStart_toStartOf="@+id/LinkCollector"
         app:layout_constraintTop_toBottomOf="@+id/LinkCollector" />

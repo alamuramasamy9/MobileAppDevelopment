@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button buttonAbtMe;
     Button buttonClicky;
-
-    private Button linkCollector;
+    Button linkCollector;
+    Button buttonPrime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {openRecyclerView();}
         });
+
+        buttonPrime = findViewById(R.id.primeNo);
+        buttonPrime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openPrimeView();
+            }
+        });
     }
 
     public void openClicky(){
@@ -61,6 +69,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AboutMe.class);
         startActivity(intent);
     }
+
+    private void openPrimeView() {
+        Intent primeIntent = new Intent(this, PrimeNumberView.class);
+        startActivity(primeIntent);
+    }
+
+
 
 
 }

@@ -35,6 +35,11 @@
             android:exported="false"
             android:configChanges="keyboardHidden|orientation|screenSize"/>
 
+        <activity
+            android:name=".PrimeNumberView"
+            android:exported="false"
+            android:configChanges="keyboardHidden|orientation|screenSize"/>
+
     </application>
 
 </manifest>

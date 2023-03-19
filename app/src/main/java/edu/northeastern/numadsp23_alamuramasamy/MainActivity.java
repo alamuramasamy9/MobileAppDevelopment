@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     Button linkCollector;
     Button buttonPrime;
 
+    Button location;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,16 @@ public class MainActivity extends AppCompatActivity {
                 openPrimeView();
             }
         });
+
+        location = findViewById(R.id.locationB);
+
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openLocation();
+            }
+
+        });
     }
 
     public void openClicky(){
@@ -75,7 +87,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(primeIntent);
     }
 
-
-
+    private void openLocation() {
+        Intent location = new Intent(this, LocationActivity.class);
+        startActivity(location);
+    }
 
 }

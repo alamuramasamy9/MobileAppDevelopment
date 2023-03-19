@@ -10,11 +10,11 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="5dp"
         android:text="Hello World!"
-        app:layout_constraintStart_toStartOf="@+id/primeNo"
-        app:layout_constraintTop_toBottomOf="@+id/primeNo" />
+        app:layout_constraintEnd_toEndOf="@+id/locationB"
+        app:layout_constraintTop_toBottomOf="@+id/locationB" />
 
     <Button
         android:id="@+id/buttonAbtMe"
@@ -31,9 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="118dp"
         android:text="Clicky Clicky"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAbtMe"
         tools:layout_marginBottom="100dp"
         tools:layout_marginEnd="132dp" />
@@ -58,6 +58,16 @@
         android:text="Prime Search"
         app:layout_constraintStart_toStartOf="@+id/LinkCollector"
         app:layout_constraintTop_toBottomOf="@+id/LinkCollector" />
+
+    <Button
+        android:id="@+id/locationB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="13dp"
+        android:text="Location"
+        app:layout_constraintStart_toStartOf="@+id/primeNo"
+        app:layout_constraintTop_toBottomOf="@+id/primeNo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
